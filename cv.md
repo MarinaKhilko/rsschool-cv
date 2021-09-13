@@ -25,3 +25,15 @@ My goal is become frontend developer. My forte is dedication. My motto: I see th
 Previously independently studied: HTML/css. I can work with "Avocod", "Figma"
 
 ---
+
+## Education 
+
+ BSUIR
+ 
+---
+
+## Foreing laguage 
+
+I graduated from Streamline School with A2 + level and I have a certificate. And now Im studying individually with a teacher
+
+--- 
