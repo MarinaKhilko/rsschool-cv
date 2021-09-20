@@ -9,12 +9,28 @@
 </head>
 
 <body class="page-body">
+    <header>
+        <button class="header">
+            <span class="hrader__line"></span>
+            <span class="header__name">Menu</span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about-me">About me</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#code-example">Code</a></li>
+                <li class="nav__item"><a href="#projects">Projects</a></li>
+                <li class="nav__item"><a href="#contacts">Contact</a></li>
+                <li class="nav__item"><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
     <main class="container">
         <div class="left">
-            <figure>
-                <img src="./IMG_1277.jpg" width="380" height="507" alt="Photo of Marina Khilko" />
+            <figure class="figure--left">
+                <img src="./IMG_1277.jpg" width="380" height="507" class="photo" alt="Photo of Marina Khilko" />
             </figure>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h2 class="section-title">Contact</h2>
                 <ul class="contact__list">
                     <li class="contact__inform">
@@ -31,7 +47,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="education">
+            <section class="education" id="education">
                 <h2 class="section-title">Education</h2>
                 <ul class="education__list">
                     <li class="education__inform">
@@ -45,11 +61,11 @@
             </section>
         </div>
         <div class="right">
-            <section class="name-title">
+            <section class="name-title" id="name-title">
                 <h1 class="name"> Marina Khilko</h1>
                 <p>Front-End Developer</p>
             </section>
-            <section class="about-me">
+            <section class="about-me" id="about-me">
                 <h2 class="section-title">About me</h2>
                 <p>
                     I like to study and learn something new. I like to run, do yoga.
@@ -60,7 +76,8 @@
                     it<br />
                 </p>
             </section>
-            <section class="skills">
+
+            <section class="skills" id="skills">
                 <h2 class="section-title">Skills</h2>
                 <ul class="skills__list">
                     <li>Engineering</li>
@@ -71,6 +88,33 @@
                     </li>
                 </ul>
             </section>
+
+            <section class="code-example" id="code-example">
+                <h2 class="section-title">Code example</h2>
+                <details>
+                    <summary>From Codewars</summary>
+                    <pre>
+                    <code data-language = "javascript">
+                                // function find(a,b,n){
+                                    let start = ("" + a + b);
+                                    let next = a + b;
+                                    let seq = start + next;
+                                    while (seq.length <= n) {
+                                    seq += (parseInt(seq[seq.length-2]) + parseInt(seq[seq.length-1]));
+                                    }
+                                    return parseInt(seq[n]);
+                                    }
+                    </code>
+                  </pre>
+                </details>
+            </section>
+
+            <section class="projects" id="projects">
+                <h2 class="section-title">My projects</h2>
+                <img src="./museum.jpg" width="576" height="346" alt="Museum screenshot" class="projects__image">
+                <h3 class="projects__title">Museum</h3>
+            </section>
+
         </div>
     </main>
     <footer class="footer">
