@@ -99,7 +99,7 @@
                                     let start = ("" + a + b);
                                     let next = a + b;
                                     let seq = start + next;
-                                    while (seq.length <= n) {
+                                    while (seq.length &lt;= n) {
                                     seq += (parseInt(seq[seq.length-2]) + parseInt(seq[seq.length-1]));
                                     }
                                     return parseInt(seq[n]);
