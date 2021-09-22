@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marina Khilko CV</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </head>
 
 <body class="page-body">
     <header>
-        <button class="header">
-            <span class="hrader__line"></span>
-            <span class="header__name">Menu</span>
+        <button class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__name">Menu</span>
         </button>
         <nav class="nav">
             <ul class="nav__list">
@@ -27,10 +30,12 @@
     </header>
     <main class="container">
         <div class="left">
+
             <figure class="figure--left">
                 <img src="./IMG_1277.jpg" width="380" height="507" class="photo" alt="Photo of Marina Khilko" />
             </figure>
-            <section class="contacts" id="contacts">
+
+            <section class="contact" id="contacts">
                 <h2 class="section-title">Contact</h2>
                 <ul class="contact__list">
                     <li class="contact__inform">
@@ -47,6 +52,7 @@
                     </li>
                 </ul>
             </section>
+
             <section class="education" id="education">
                 <h2 class="section-title">Education</h2>
                 <ul class="education__list">
@@ -60,11 +66,18 @@
                 </ul>
             </section>
         </div>
+
         <div class="right">
+
             <section class="name-title" id="name-title">
                 <h1 class="name"> Marina Khilko</h1>
                 <p>Front-End Developer</p>
             </section>
+
+            <figure class="figure--right">
+                <img src="./IMG_1277.jpg" width="380" height="507" class="photo" alt="Photo of Marina Khilko" />
+            </figure>
+
             <section class="about-me" id="about-me">
                 <h2 class="section-title">About me</h2>
                 <p>
@@ -93,19 +106,17 @@
                 <h2 class="section-title">Code example</h2>
                 <details>
                     <summary>From Codewars</summary>
-                    <pre>
-                    <code data-language = "javascript">
-                                // function find(a,b,n){
-                                    let start = ("" + a + b);
-                                    let next = a + b;
-                                    let seq = start + next;
-                                    while (seq.length &lt;= n) {
-                                    seq += (parseInt(seq[seq.length-2]) + parseInt(seq[seq.length-1]));
-                                    }
-                                    return parseInt(seq[n]);
-                                    }
-                    </code>
-                  </pre>
+                    <pre><code class="language-javascript">
+function find(a,b,n){
+let start = ("" + a + b);
+let next = a + b;
+let seq = start + next;
+while (seq.length &lt;= n) {
+seq += (parseInt(seq[seq.length-2]) + parseInt(seq[seq.length-1]));
+}
+return parseInt(seq[n]);
+}      
+                        </code></pre>
                 </details>
             </section>
 
@@ -117,6 +128,7 @@
 
         </div>
     </main>
+
     <footer class="footer">
         <a class="footer__github" href="https://github.com/MarinaKhilko">
             My GitHub
@@ -126,6 +138,7 @@
             <img src="./rsschool.jpg" width="86" height="32" alt="RS School">
         </a>
     </footer>
+
 </body>
 
 </html>
